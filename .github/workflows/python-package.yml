@@ -38,5 +38,7 @@ jobs:
         git add -A
         git commit -am "auto update README.md"
     - name: Push changes
+      env:
+        GITHUB_TOKEN: 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
       run: |
-        git push
+        git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git HEAD:main

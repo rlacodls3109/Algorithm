@@ -1,0 +1,7 @@
+AB = input()
+AB = AB.split() 
+print(int(AB[0]) + int(AB[1]))
+print(int(AB[0]) - int(AB[1]))
+print(int(AB[0]) * int(AB[1]))
+print(int(AB[0]) // int(AB[1]))
+print(int(AB[0]) % int(AB[1]))
